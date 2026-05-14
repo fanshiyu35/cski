@@ -1,0 +1,305 @@
+/* CSKI Website Styles — Czech Academic Society */
+:root {
+  --czech-red: #8B1A1A;
+  --czech-dark: #1a1a2e;
+  --czech-blue: #16213e;
+  --accent-gold: #c4a24a;
+  --text: #2d2d2d;
+  --text-light: #555;
+  --bg: #fafaf8;
+  --card-bg: #fff;
+  --border: #e0d8cc;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.7;
+}
+
+header {
+  background: linear-gradient(135deg, var(--czech-dark) 0%, var(--czech-blue) 100%);
+  color: #fff;
+}
+
+.header-top {
+  background: var(--czech-red);
+  text-align: right;
+  padding: 4px 40px;
+  font-size: 0.8rem;
+}
+
+.lang-switch a {
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.header-main {
+  padding: 30px 40px 20px;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo-icon {
+  background: var(--accent-gold);
+  color: var(--czech-dark);
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  border-radius: 4px;
+}
+
+.logo-text h1 {
+  font-size: 1.6rem;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+}
+
+.subtitle {
+  font-size: 0.95rem;
+  opacity: 0.75;
+  margin-top: 4px;
+  font-style: italic;
+}
+
+nav {
+  background: rgba(0,0,0,0.2);
+  padding: 0 40px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 24px;
+  font-size: 0.95rem;
+  transition: background 0.2s;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+nav li a:hover, nav li a.active {
+  background: rgba(255,255,255,0.12);
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.hero {
+  margin-bottom: 40px;
+}
+
+.hero h2 {
+  font-size: 1.8rem;
+  color: var(--czech-dark);
+  margin-bottom: 16px;
+  font-weight: normal;
+  border-bottom: 2px solid var(--czech-red);
+  padding-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.05rem;
+  margin-bottom: 12px;
+  color: var(--text-light);
+}
+
+.highlights {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 30px;
+}
+
+.highlight-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  padding: 24px;
+  border-radius: 4px;
+}
+
+.highlight-card h3 {
+  font-size: 1.1rem;
+  color: var(--czech-red);
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+
+.highlight-card p {
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+/* Page title bar */
+.page-title {
+  background: var(--czech-blue);
+  color: #fff;
+  padding: 20px 40px;
+  font-size: 1.4rem;
+}
+
+/* Content styles */
+.content-section {
+  margin-bottom: 36px;
+}
+
+.content-section h3 {
+  font-size: 1.25rem;
+  color: var(--czech-dark);
+  margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--border);
+}
+
+.content-section p, .content-section li {
+  font-size: 0.95rem;
+  color: var(--text-light);
+  margin-bottom: 8px;
+}
+
+.content-section ul {
+  padding-left: 24px;
+}
+
+.content-section li {
+  margin-bottom: 6px;
+}
+
+/* Fellow list */
+.fellow-list {
+  list-style: none;
+  padding: 0;
+}
+
+.fellow-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.fellow-name {
+  font-weight: bold;
+  color: var(--text);
+}
+
+.fellow-info {
+  color: var(--text-light);
+  font-size: 0.85rem;
+}
+
+.fellow-year {
+  color: var(--czech-red);
+  font-size: 0.85rem;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+}
+
+th, td {
+  padding: 10px 14px;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.9rem;
+}
+
+th {
+  background: var(--czech-dark);
+  color: #fff;
+  font-weight: normal;
+}
+
+tr:nth-child(even) td {
+  background: #f8f6f0;
+}
+
+/* Profile */
+.profile-header {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 30px;
+}
+
+.profile-avatar {
+  width: 120px;
+  height: 120px;
+  background: var(--czech-blue);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  border-radius: 4px;
+}
+
+.profile-title h3 {
+  font-size: 1.4rem;
+  margin-bottom: 4px;
+}
+
+.profile-title .fellow-badge {
+  display: inline-block;
+  background: var(--accent-gold);
+  color: var(--czech-dark);
+  padding: 3px 12px;
+  font-size: 0.8rem;
+  border-radius: 2px;
+  margin-top: 6px;
+}
+
+footer {
+  background: var(--czech-dark);
+  color: #ccc;
+  margin-top: 60px;
+}
+
+.footer-content {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.footer-bottom {
+  background: rgba(0,0,0,0.3);
+  text-align: center;
+  padding: 14px;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .highlights { grid-template-columns: 1fr; }
+  .header-main { padding: 20px; }
+  nav { padding: 0 12px; }
+  nav li a { padding: 10px 14px; font-size: 0.85rem; }
+  .footer-content { grid-template-columns: 1fr; }
+}
